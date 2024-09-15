@@ -42,16 +42,14 @@ body {
     color: var(--text-dark, #403F3D);
     font-weight: 500;
     font-family: Montserrat;
-
+    
 
 }
 
 /* ---------------------------------------------------------------------------- */
 .wrapper {
     min-height: 100%;
-    max-width: 1440px;
-
-    margin: 0px auto;
+   
     overflow: hidden;
 
 }
@@ -61,6 +59,7 @@ body {
 
     margin: 0px auto;
     max-width: 1024px;
+    padding: 0px 20px;
 }
 
 .all {
@@ -79,7 +78,11 @@ body {
 .image img {
 
     height: 60vh;
-
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
 }
 
 .task-title {
@@ -113,6 +116,8 @@ body {
 article img {
     /*размер изображений слайдера*/
     width: 100%;
+    border-radius: 1%;
+    
 }
 
 .titles article {
@@ -196,6 +201,7 @@ a {
     width: 100%;
 }
 .slider-title-inner {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,7 +211,7 @@ a {
 
 #active label {
 
-    width: 30px;
+    width: 20px;
     height: 30px;
     display: flex;
     align-items: center;
